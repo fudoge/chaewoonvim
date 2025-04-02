@@ -14,6 +14,7 @@ return {
             'sainnhe/everforest',
             'nordtheme/vim',
             'marko-cerovac/material.nvim',
+            'Mofiqul/dracula.nvim',
             'default'
         })
     end
