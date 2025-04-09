@@ -26,7 +26,7 @@ return {
                     "nginx_language_server",
                     "sqls",
                     "yamlls",
-                    "pyright"
+                    "pyright",
                 },
             })
         end,
