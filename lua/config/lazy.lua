@@ -44,15 +44,16 @@ local universal_utils = require("config.universal")
 if universal_utils.is_mac() or universal_utils.is_windows() then
     vim.opt.clipboard:append { "unnamedplus" }
 elseif universal_utils.is_wsl() then
+    vim.opt.clipboard:append { "unnamedplus" }
     vim.g.clipboard = {
         name = "WSL clipboard",
         copy = {
-            ["+"] = "clip.exe",
-            ["*"] = "clip.exe",
+            ["+"] = "win32yank.exe -i --crlf",
+            ["*"] = "win32yank.exe -i --crlf",
         },
         paste = {
-            ["+"] = "powershell.exe -c [Console]::Out.Write((Get-Clipboard))",
-            ["*"] = "powershell.exe -c [Console]::Out.Write((Get-Clipboard))",
+            ['+'] = "win32yank.exe -o -lf",
+            ['*'] = "win32yank.exe -o --lf",
         },
         cache_enabled = 0,
     }
