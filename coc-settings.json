@@ -11,5 +11,6 @@
   "diagnostic.messageTarget": "float",
   "coc.preferences.diagnostic.displayByAle": false,
   "coc.preferences.formatOnSaveFiletypes": ["terraform"],
-  "terraform.languageServer.ignoreSingleFileWarning": true
+  "coc.preferences.ignoreSingleFileWarning": true,
+  "ignoreSingleFileWarning": true
 }
