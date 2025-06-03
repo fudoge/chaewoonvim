@@ -15,6 +15,7 @@ return {
             'nordtheme/vim',
             'marko-cerovac/material.nvim',
             'Mofiqul/dracula.nvim',
+            'rebelot/kanagawa.nvim',
             'default'
         })
     end
