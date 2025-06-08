@@ -16,16 +16,6 @@ mapKey("<leader>h", ":nohlsearch<CR>")
 mapKey("<", "<gv", "v")
 mapKey(">", ">gv", "v")
 
---ToggleTerm
-mapKey("<leader>sh", ":ToggleTerm<CR>")
-mapKey("<esc>", [[<C-\><C-n>]], "t", { buffer = 0 })
-mapKey("jk", [[<C-\><C-n>]], "t", { buffer = 0 })
-mapKey("<C-h>", [[<Cmd>wincmd h<CR>]], "t", { buffer = 0 })
-mapKey("<C-j>", [[<Cmd>wincmd j<CR>]], "t", { buffer = 0 })
-mapKey("<C-k>", [[<Cmd>wincmd k<CR>]], "t", { buffer = 0 })
-mapKey("<C-l>", [[<Cmd>wincmd l<CR>]], "t", { buffer = 0 })
-mapKey("<C-w>", [[<C-\><C-n><C-w>]], "t", { buffer = 0 })
-
 -- Move to previous/next
 mapKey("<A-,>", "<Cmd>BufferPrevious<CR>", "n")
 mapKey("<A-.>", "<Cmd>BufferNext<CR>", "n")
